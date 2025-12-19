@@ -25,8 +25,9 @@ export const HomePage = () => {
     <>
       <CustomJumbotrom
         title="Encuentra tus divertidos personajes"
-        description="Explora esta app para ver a tus personajes de rick and Morty"
+        description="Explora esta App para ver a tus personajes de Rick And Morty"
       />
+      <p className="text-gray-400 text-center mb-7 ">By: Benjasx98</p>
       <CharactersStatus />
       <Tabs value={selectedTab} className="w-full">
         <TabsList className="grid w-full grid-cols-4">
@@ -87,7 +88,7 @@ export const HomePage = () => {
         <TabsContent value="favoritos">
           {favorites.length === 0 ? (
             <h2 className="text-center mt-5 text-gray-400 text-xl">
-              No hay personajes favoritos, te recomienso marcar a (Rick Sánchez)
+              No hay personajes favoritos, te recomiendo marcar a (Rick Sánchez)
             </h2>
           ) : (
             <HeroGrid characters={favorites} />
